@@ -1,5 +1,13 @@
+import Vue from 'vue';
+import App from './App.vue';
 import './index.html';
-import './style.css';
+
+new Vue({
+  el: '#app',
+  render: h => h(App),
+});
+
+/* VUE bez komponent
 
 new Vue ({
   el: '#app',
@@ -17,8 +25,11 @@ new Vue ({
     },
   }
 })
+*/
 
-/*let upLikes = 0;
+/* Vanilla JS
+
+let upLikes = 0;
 let downLikes = 0;
 
 const btnUp = document.querySelector('#btn-up');
